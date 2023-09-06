@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Tela de login Alpha</title>
+</head>
+
+<body>
+    <main>
+        <!--main-login é caixa que tem as caixas do lado esquerdo e do lado direito.-->
+        <div class="main-login">
+
+            <!--left-login é caixa com o texto e a imagem.-->
+            <div class="left-login">
+                <h1>Faça o login<br>E entre para a resistência!</h1>
+                <img src="image/do-not-enter.jpg" alt="Imagem da porta fechada, Do Not Enter">
+            </div>
+
+            <!--right-login é a caixa de login, com os campos de input para e-mail e senha e o botão de login.-->
+            <div class="right-login">
+
+                <!--card-login é a div com os elementos da caixa de login. É necessário ter uma caixa que englobe outras caixas de elementos.-->
+                <div class="card-login">
+                    <h2>LOGIN</h2>
+
+                    <!--div com class textfield-->
+                    <div class="textfield">
+
+                        <!--A tag label é importante para os campos de formulários. Ela especifica qual o "rótulo" do input (a que se refere o input, como por exemplo envolvê-la em um texto “Nome completo”), e ajuda na experiência do usuário durante a utilização e preenchimento do formulário.
+                        
+                        Na label temos o for. for É o atributo de entrada para qual o <label> se destina. Seu valor deve ser igual ao valor do atributo id do elemento controle de entrada (<input>).-->
+                        <label for="usuario">Usuário</label>
+
+                        <!--O elemento HTML <input> é usado para criar controles interativos para formulários baseados na web para receber dados do usuário. A semântica de um <input> varia consideravelmente dependendo do valor de seu atributo type. 
+                        
+                        Neste caso o type é text, o name é usuario sem acento e o placeholder é o campo onde o usuário vai digitar e Onde vai aparcer a mensagem que queremos, nesse caso é Usuário.-->
+                        <input type="text" name="usuario" placeholder="Usuário">
+                    </div>
+
+                    <!---->
+                    <div class="textfield">
+
+                        <!---->
+                        <label for="senha">Senha</label>
+
+                        <!---->
+                        <input type="password" name="senha" placeholder="Senha">
+                    </div>
+
+                    <!--para criarmos o nosso botão de login. Quando criamos a tag buttom, colocamos a class btn-login, que serve para identificar como botão de login.-->
+                    <button class="btn-login">Login</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
