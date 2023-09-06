@@ -1,0 +1,203 @@
+/*Resetando configurações que o navegador dá como padrão.*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*seletor da caixa principal onde estão a caixa da esquerda e direita. É uma caixa que vai organizar tudo.*/
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(19, 19, 19, 0.925);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*seletor da imagem da caixa esquerda.*/
+.main-login .left-login>img {
+    max-width: 40%;
+    border-radius: 20px;
+}
+
+/*seletor da caixa da direita, onde estão os campos de usuário e senha.*/
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /*flex-direction: column; server para deixar os elementos da caixa da esquerda em coluna. Ou seja, uma em baixo da outra.*/
+    flex-direction: column;
+}
+
+/*Seletor da mensagem que fica acima da imagem na caixa da esquerda.*/
+.left-login>h1 {
+    color: #77ffc0;
+}
+
+/**/
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/**/
+.card-login {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #363535;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #ff01019f;
+}
+
+/**/
+.card-login>h2 {
+    color: yellow;
+    font-weight: 800;
+    margin: 0;
+}
+
+/**/
+.textfield {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+/**/
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: #514869;
+    color: #f0ffffde;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/**/
+.textfield>label {
+    color: #f0ffffde;
+    margin-bottom: 10px;
+}
+
+/**/
+.textfield>input::placeholder {
+    color: #f0ffff94;
+}
+
+/**/
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: red;
+    background: yellow;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #00ff8052;
+}
+
+/**/
+@media screen and (max-width: 780px) {
+    .main-login {
+        flex-direction: column;
+        height: 140vw;
+    }
+
+    .left-login {
+        width: 70%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .right-login {
+        width: 80%;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+}
+
+/**/
+@media screen and (max-width: 680px) {
+    .main-login {
+        flex-direction: column;
+        height: 140vw;
+    }
+
+    .left-login {
+        width: 70%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .right-login {
+        width: 80%;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+}
+
+/**/
+@media screen and (max-width: 532px) {
+    .main-login {
+        flex-direction: column;
+        height: 140vw;
+    }
+
+    .left-login {
+        width: 70%;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .right-login {
+        width: 80%;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+}
+
+/**/
+@media screen and (max-width: 412px) {
+    .main-login {
+        flex-direction: column;
+        width: auto;
+        height: 110vh;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-login {
+        width: 120vw;
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+
+    .right-login {
+        width: 120vw;
+        margin-top: 0;
+        padding-top: 20px;
+    }
+}
