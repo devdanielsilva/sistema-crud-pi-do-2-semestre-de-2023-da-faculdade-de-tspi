@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+section .produtos{
+   max-width: 900px;
+   margin: 0 auto;
+   padding: 0 25;
+   display: flex;
+}
+
+.produtos{
+    width: 33.3%;
+    padding: 0 20px;;
+}
+
+ssction .container-fluid .produtos img{
+    max-width: 100%;
+
+}
