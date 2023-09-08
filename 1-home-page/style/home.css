@@ -4,6 +4,73 @@
     box-sizing: border-box;
 }
 
+/*O Seletor com :root, é um seletor para definir configuração para cor da nav, cor do texto da nav, cor do button da nav, texto do button da nav.*/
+:root {
+    font-size: 62.5%;
+    --nav-bg-color: #121212;
+    --nav-text-color: white;
+    --button-bg-color: #0052CE;
+    --button-text-color: white;
+}
+
+/*Seletores da nav 1. */
+.nav1 {
+    display: flex;
+
+    /*justify-content com o parâmetro space-between, serve para colocar espaços entre os elementos da nav.*/
+    justify-content: space-between;
+
+    /*align-items: center; server para alinhar os elementos no eixo (main axis - eixo principal)*/
+    align-items: center;
+
+    /*background-color é para a cor de fundo de um elemento. var é para a cor que definimos no seletor :root
+    --nav-bg-color é a cor da navbar que definimos no :root*/
+    background-color: var(--nav-bg-color);
+
+    /*color é para a cor do texto geralmente. var tem a cor do texto, a cor que definimos também no :root*/
+    color: var(--nav-text-color);
+
+    /*height é altura de um elemento, e 6rem que é equivalçente a 60px. rem é o tamanho*/
+    height: 6rem;
+
+    /*padding é o espaçamento. o 0 é o espaçamento de cima e em baixo, e o 2.4 é o espaçamento das laterais, direita e esquerda. */
+    padding: 0 2.4rem;
+
+    margin: 1rem;
+    /*1 rem é equivalente á 10px.*/
+}
+
+/*Observando como caixas, a ul é uma caixa com 3 caixas dentro que são as li.
+Se queremos mexer nas caixas dentro, que é os li, deixar centralizado e um li do lado do outro, criaremos um seletor da ul, ai colocamos o display flex. Que ai sim todos os elementos li, vão ficar um do lado do outro.*/
+.nav1 ul {
+    display: flex;
+
+    /*A propriedade list-style: none; Serve para tirar as bolinhas da lista ul - Lista não-ordenada.*/
+    list-style: none;
+
+    /*Para adicionar um espaço entre os li, utilizamos o gab: 3rem; 3rem é equivalente a 30px
+
+    Para termos espaços entre elementos do display:flex; podemos usar só um gab: 3rem ou quantidade necessária. 
+    Com isso não precisamos usar margin: right; ou margin: left; porque estamos o display: flex e isso facilita o desenvolvimento.*/
+    gap: 3rem;
+}
+
+/**/
+.nav1 .buttom {
+    background-color: var(--button-bg-color);
+    color: var(--button-text-color);
+    gap: 1rem;
+    width: 9rem;
+    height: 3rem;
+    border-radius: 20px;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav1 .nav2 {
+    height: 5rem;
+    margin: 10px 0;
+}
 
 section .produtos{
    max-width: 900px;
