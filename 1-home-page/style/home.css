@@ -7,10 +7,13 @@
 /*O Seletor com :root, é um seletor para definir configuração para cor da nav, cor do texto da nav, cor do button da nav, texto do button da nav.*/
 :root {
     font-size: 62.5%;
-    --nav-bg-color: #121212;
+    --nav-bg-color: #5A2D82;
     --nav-text-color: white;
     --button-bg-color: #0052CE;
     --button-text-color: white;
+}
+body{
+    background-color: rgba(197, 194, 194, 0.945);
 }
 
 /*Seletores da nav 1. */
@@ -38,6 +41,7 @@
 
     margin: 1rem;
     /*1 rem é equivalente á 10px.*/
+    border: 3px solid yellow;
 }
 
 /*Observando como caixas, a ul é uma caixa com 3 caixas dentro que são as li.
@@ -77,7 +81,8 @@ section .produtos{
    margin: 0 auto;
    padding: 0 25;
    display: flex;
-   justify-content: space-around;
+   justify-content: space-evenly;
+   padding: 20px;
 }
 
 .produtos-single{
