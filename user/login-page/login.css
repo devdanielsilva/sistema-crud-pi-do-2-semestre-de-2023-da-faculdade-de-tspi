@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', 'sans-serif';
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(73,11,132);
+    background: linear-gradient(90deg, rgba(73,11,132,1) 0%, rgba(84,16,149,0.9472163865546218) 28%, rgba(94,21,165,0.9023984593837535) 53%, rgba(103,25,179,0.8491771708683473) 76%, rgba(112,30,194,0.8099614845938375) 100%);
+}
+
+.left-login h1 {
+    font-size: 2vw;
+    color: #ffffffee;
+}
+
+.left-login-img {
+    width: 35vw;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.right-login-img {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.right-login-img img {
+    width: 13vw;
+}
+
+.card-login {
+    background-color:rgb(73,11,132);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*alinhou os itens verticalmente*/
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #00000056;
+}
+
+.card-login h1 {
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.text-field input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #0000003b;
+    color: #ffffffda;
+    font-size: 12pt;
+    box-shadow: 0px 10px 40px #00000056;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.text-field label {
+    color: #ffffffb2;
+    margin-bottom: 10px;
+}
+
+.text-field input::placeholder {
+    color:#ffffffb2;
+}
+
+.btn-login {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: rgb(73,11,132);
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px -12px #0000000c;
+}
+
+.btn-login:hover {
+    background-color: rgba(255, 255, 255, 0.849)
+}
+
+/*-------------------------------------------*/
+/*CRIANDO MEDIAS PADA DEIXAR RESPONSIVO PARA CELULAR*/
+
+
+@media only screen and (max-width: 950px) {
+    .card-login {
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        flex-direction: column;
+    }
+
+    .left-login h1{
+        display: none;
+    }
+
+    .left-login {
+        width: 100%;
+        height: auto;
+        background: transparent;
+    }
+
+    .left-login-img {
+        width: 70vw;
+    }
+    
+    .right-login {
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login-img img {
+        width: 50VW;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+}

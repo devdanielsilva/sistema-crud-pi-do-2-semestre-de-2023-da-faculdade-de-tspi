@@ -1,0 +1,119 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto';
+    width: 100%;
+    height: 100%;
+}
+
+/*Define o TAMANHO/POSIÇÃO/COR da tela de login do lado esquerdo*/
+div#TELA-ESQUERDA-BACKGROUND {
+    background-color: #f1f1f1;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+div#TELA-ESQUERDA-BACKGROUND img#logoSite {
+    position: relative;
+    margin:50% 50% 50% 50%;
+    transform: translate(-50%);
+    width: 40vh;
+    height: 40vh;
+}
+
+/*Define o TAMANHO/POSIÇÃO/COR da tela de login do lado esquerdo*/
+div#TELA-DIREITA-BACKGROUND {
+    background: rgb(73,11,132);
+    background: linear-gradient(90deg, rgba(73,11,132,1) 0%, rgba(84,16,149,0.9472163865546218) 28%, rgba(94,21,165,0.9023984593837535) 53%, rgba(103,25,179,0.8491771708683473) 76%, rgba(112,30,194,0.8099614845938375) 100%);
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+/*Define o TAMANHO/POSIÇÃO/COR da div*/
+div#TELA-DIREITA-BACKGROUND div#login {
+    background-color: #f1f1f1;
+    width: 50%;
+    height: 50%;
+    position: relative;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    border-radius: 3vh;
+    box-shadow: 3vh 3vh 3vh rgba(0, 0, 0, 0.235);
+}
+
+div#TELA-DIREITA-BACKGROUND div#login form {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+div#TELA-DIREITA-BACKGROUND div#login h2 {
+    position: relative;
+    top: 15%;
+    margin: 0;
+    transform: scale(2.3); /* Aumenta o tamanho da fonte em 1.5 vezes */
+}
+
+div#TELA-DIREITA-BACKGROUND div#login input#back-email {
+    position: relative;
+    top: 28%;
+    width: 50%;
+    height: 7%;
+    border-radius: 5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding-left: 5vh;
+}
+
+div#TELA-DIREITA-BACKGROUND div#login img#iconEmail {
+    position: fixed;
+    top: 35.7%;
+    left: 23%;
+    width: 4%;
+}
+
+div#TELA-DIREITA-BACKGROUND div#login input#back-password {
+    position: relative;
+    top: 33%;
+    width: 50%;
+    height: 7%;
+    border-radius: 5vh;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    padding-left: 5vh;
+}
+
+div#TELA-DIREITA-BACKGROUND div#login div#optionsLogin {
+    position: relative;
+}
+
+div#TELA-DIREITA-BACKGROUND div#login img#iconPassword {
+    position: fixed;
+    top: 49%;
+    left: 23%;
+    width: 4%;
+}
+
+div#TELA-DIREITA-BACKGROUND div#login input#submit {
+    width: 30%;
+    height: 10%;
+    margin-top: 40%;
+    font-family: 'Roboto';
+    font-size: 0.8rem;
+    border-radius: 5vh;
+}
+
+div#TELA-DIREITA-BACKGROUND div#login input#submit:hover {
+    color: #f1f1f1;
+    background: rgb(167,61,215);
+    background: linear-gradient(130deg, rgba(167,61,215,1) 0%, rgba(139,38,185,1) 50%, rgba(113,4,255,1) 100%);
+    width: 30.7%;
+    height: 10.5%;
+}
