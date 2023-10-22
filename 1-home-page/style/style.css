@@ -4,6 +4,6 @@
     box-sizing: border-box;
 }
 
-body nav{
-    background-color: purple;
+#logo{
+    width: 1rem;
 }
