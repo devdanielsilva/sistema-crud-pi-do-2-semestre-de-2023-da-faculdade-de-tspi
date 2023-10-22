@@ -8,3 +8,9 @@
     width: 1vw;
     height: 1vh;
 }
+
+section #secfooter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
