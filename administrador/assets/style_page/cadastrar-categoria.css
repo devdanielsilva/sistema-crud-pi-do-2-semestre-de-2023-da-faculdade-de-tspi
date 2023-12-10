@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+  font-family: "Noto Sans", "sans-serif";
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.main-adm {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-adm {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #472468;
+}
+
+.left-adm-img {
+  background-color: #fff;
+  width: 35vw;
+  border-radius: 20px;
+  box-shadow: 1px 10px 40px black;
+}
+
+.right-adm {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+textarea {
+  margin: 20px;
+  padding: 0 70px;
+  border-radius: 20px;
+}
+
+.card-adm {
+  background-color: #472468;
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; /*alinhou os itens verticalmente*/
+  padding: 30px 35px;
+  border-radius: 20px;
+  box-shadow: 1px 10px 40px #000000;
+}
+
+.card-adm h1 {
+  color: #fff;
+  font-weight: 800;
+  margin: 0;
+}
+
+.btn {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #472468;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 10px 40px -12px #0000000c;
+}
+
+/*Hover para cor dos campos dos inputs e dos botões, quando passar o cursor do mouse em cima.*/
+
+button:hover {
+  background-color: #fff;
+  color: #472468;
+}
+input:hover {
+  background-color: #472468;
+  color: whitesmoke;
+}
+
+input,
+.cadastrar {
+  width: 400px;
+  height: 40px;
+  padding: 10px;
+  margin: 5px;
+  border-radius: 8px;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: #472468;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0px 10px 40px -12px #0000000c;
+}
+
+.cadastrar {
+  margin: 0px 0px 30px;
+}
+
+label {
+  text-transform: uppercase;
+  color: whitesmoke;
+  margin: 10px 0px;
+}
+/*-------------------------------------------*/
+/*CRIANDO MEDIAS PADA DEIXAR RESPONSIVO PARA CELULAR*/
+
+@media only screen and (max-width: 1364px) {
+  .right-adm {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: 50%;
+    text-decoration: none;
+  }
+  #btn-voltar {
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 1020px) {
+  .right-adm {
+    width: 100%;
+    height: auto;
+  }
+
+  .btn {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 999px) {
+  .card-adm {
+    width: 85%;
+  }
+  .right-adm {
+    width: 100%;
+    height: auto;
+  }
+
+  .right-adm-img img {
+    width: 50vw;
+  }
+
+  .card-adm {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  .main-adm {
+    flex-direction: column;
+  }
+
+  .left-adm {
+    margin: 32px 0px 10px 0px;
+  }
+
+  .right-adm {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .right-adm-img img {
+    width: 50vw;
+  }
+
+  .card-adm {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .left-adm {
+    margin: 32px 0px 10px 0px;
+  }
+  .left-adm-img {
+    padding: 20px 0px;
+  }
+}

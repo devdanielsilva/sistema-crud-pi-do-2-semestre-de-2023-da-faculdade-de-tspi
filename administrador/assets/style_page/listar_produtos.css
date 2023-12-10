@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+ 
+:root {
+    /*testes*/
+    --color-theme-purple: #472468;
+    --color-theme-yellow: #ffbd59;
+    --color-theme-black: #000000;
+    /* Adicione outras variáveis ou ajuste conforme necessário */
+  }  
+ 
+/* Reset de estilos para garantir uma base consistente em todos os navegadores */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+/* Estilo para o corpo da página */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #472468;
+  color: #000000;
+  margin: 0;
+  padding: 0;
+}
+ 
+/* Estilo para cabeçalhos */
+h1, h2, h3 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color:#FFBD59;
+  text-align: center;
+}
+ 
+/* Estilo para botões */
+.action-btn {
+  background-color: #4caf50;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  text-decoration: none;
+  display: inline-block;
+}
+ 
+.action-btn:hover {
+  background-color: #45a049;
+}
+ 
+.delete-btn {
+  background-color: #f44336;
+}
+ 
+.delete-btn:hover {
+  background-color: #da190b;
+}
+ 
+ 
+.button:hover {
+  background-color: #0056b3;
+}
+ 
+/* Estilo para tabelas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  margin-bottom: 30px;
+}
+ 
+th, td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+}
+ 
+th {
+  background-color: #FFBD59;
+  color: #000000;
+}
+ 
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+ 
+.buttons {
+   position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    bottom: 0%;
+    background-color: var(--color-theme-yellow);
+    width: 100%;
+    height: 30px;
+    gap: 100px;
+    margin: 0px 30px;
+    margin-left: 0;
+}
+ 
+.btn{
+   width: auto;
+    height: 23px;
+    border-radius: 5px;
+    border: solid black 2px;
+   
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    box-shadow: 0px 10px 40px -12px #0000000c;
+    margin: 0px 15px;
+}

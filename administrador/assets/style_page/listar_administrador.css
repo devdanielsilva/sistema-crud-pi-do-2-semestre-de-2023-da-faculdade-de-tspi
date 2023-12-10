@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+ 
+:root {
+    /*testes*/
+    --color-theme-purple: #472468;
+    --color-theme-yellow: #ffbd59;
+    --color-theme-black: #000000;
+    /* Adicione outras variáveis ou ajuste conforme necessário */
+  }  
+ 
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+body {
+    font-family: 'Arial', sans-serif;
+}
+ 
+h2 {
+    text-transform: uppercase;
+    text-align: center;
+}
+ 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+ 
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+ 
+th {
+    background-color: #472468;
+    color: white;
+}
+ 
+tr:hover {
+    background-color: #f1f1f1;
+}
+ 
+.action-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+}
+ 
+.action-btn:hover {
+    background-color: #45a049;
+}
+ 
+.delete-btn {
+    background-color: #f44336;
+}
+ 
+.delete-btn:hover {
+    background-color: #da190b;
+}
+ 
+a,
+button {
+    text-align: center;
+}
+ 
+/*Div que estão os botões fixos de navegação dentro.*/
+.buttons {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0%;
+    background-color: var(--color-theme-yellow);
+    width: 100%;
+    height: 40px;
+    gap: 100px;
+    margin: 0px 30px;
+    margin-left: 0;
+ 
+  }
+ 
+  /*Div dos botões de navegação.*/
+  .btn{
+    width: 100%;
+    height: 28px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: whitesmoke;
+    box-shadow: 0px 10px 40px -12px #0000000c;
+  }

@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+
+:root {
+    /*testes*/
+    --color-theme-purple: #472468;
+    --color-theme-yellow: #ffbd59;
+    --color-theme-black: #000000;
+    /* Adicione outras variáveis ou ajuste conforme necessário */
+  }  
+
+body {
+    margin: 0;
+    font-family: 'Noto Sans', 'sans-serif';
+
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #472468 ;
+}
+
+
+.left-login-img {
+    background-color: #fff;
+    width: 35vw;
+    border-radius: 20px;
+    box-shadow: 1px 10px 40px #000000;
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #FFF;
+}
+
+
+
+.card-login {
+    background-color:rgb(73,11,132);
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*alinhou os itens verticalmente*/
+    padding: 30px 35px;
+    border-radius: 20px;
+    box-shadow: 1px 10px 40px #000000;
+}
+
+.card-login h1 {
+    color: #fff;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+}
+
+.btn{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #472468;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px -12px #0000000c;
+}
+
+.cadastro-de-administrador{
+    max-width: 200px;
+}
+
+button:hover{
+    background-color: #9935f7;
+    color: white;
+
+}
+/*-------------------------------------------*/
+/*CRIANDO MEDIAS PADA DEIXAR RESPONSIVO PARA CELULAR*/
+
+@media only screen and (max-width: 1070px) {
+    .card-adm {
+        width: 85%;
+    }
+    .right-adm {
+        width: 80%;
+        height: auto;
+    }
+
+    .right-adm-img img {
+        width: 50vw;
+    }
+
+    .btn{
+        width: 250px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 880px) {
+    .card-login {
+        width: 70%;
+    }
+    .btn{
+        width: 250px;
+        height: 50px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .main-login {
+        width: 70%;
+        flex-direction: column;
+    }
+    
+    .right-login {
+        width: 600px;
+        height: 400px;
+    }
+
+    .right-login-img img {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 80%;
+    }
+    .btn{
+        width: 300px;
+        height: 30px;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    .main-login {
+        flex-direction: column;
+    }
+    
+    .right-login {
+        width: 600px;
+        height: 400px;
+    }
+
+    .right-login-img img {
+        width: 50vw;
+    }
+
+    .card-login {
+        width: 80%;
+    }
+    .btn{
+        width: 300px;
+        height: 30px;
+    }
+}

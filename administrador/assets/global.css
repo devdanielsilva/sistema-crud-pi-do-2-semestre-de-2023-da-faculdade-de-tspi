@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Noto Sans', 'sans-serif';
+}
+
+:root {
+    /*testes*/
+    --color-theme-purple: #472468;
+    --color-theme-yellow: #ffbd59;
+    --color-theme-black: #000000;
+    /* Adicione outras variáveis ou ajuste conforme necessário */
+  }
+
+  h1 {
+    color: var(--cor-destaque);
+  }

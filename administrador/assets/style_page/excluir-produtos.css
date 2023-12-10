@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #fac77a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans', 'sans-serif';
+}
+
+.c{
+    background: #45087e; 
+    color: whitesmoke;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100vw;
+    height: 56vh;
+    flex-direction: column;
+    margin: 150px;
+    padding: 10rem;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #ffbd596e;
+}
+
+div{
+    display: inline-block;
+    margin: 30px;
+    padding: 10px;
+}
+
+.container-a{
+    display: flex;
+    justify-content: center;
+}
+img{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    border-radius: 100px;
+}
+.container-b{
+    width: 100%;
+    height: 300px;
+    padding-bottom: 200px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+h1{
+    font-size: 32pt
+}
+
+#p1{
+    font-size: 17pt;
+    max-width: 100%;
+    max-height: 10px;
+    margin-bottom: 110px;
+    padding: 32px;
+    padding-bottom: 50px;
+    color: whitesmoke;
+}
+
+#erro{
+    font-size: 12pt;
+    max-width: 50%;
+    max-height: 10px;
+    margin: 50px;
+    padding: 32px;
+    color: red;
+}
+
+.btn{
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 800;
+    letter-spacing: 1px;
+    color: #472468;
+    cursor: pointer;
+    background-color: #fff;
+    box-shadow: 0px 10px 40px -12px #0000000c;
+}
+
+/*CRIANDO MEDIAS PADA DEIXAR RESPONSIVO PARA CELULAR*/
+
+@media only screen and (max-width: 1441px){
+    .c {
+        width: 100%;
+        height: 700px;
+        flex-direction: column;
+    }
+
+    .container-a{
+        width: 700px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn{
+        max-width: 300px;
+        margin: 30px;
+    }
+}
+
+@media only screen and (max-width: 1364px){
+    .c {
+        width: 100%;
+        height: auto;
+    }
+
+    .btn{
+        max-width: 300px;
+    }
+}
+
+
+@media only screen and (max-width:500px ){
+    .c {
+        width: 50%;
+        height: 200px;
+        flex-direction: column;
+    }
+
+    .container-a{
+        width: 700px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn{
+        width: 10px;
+    }
+}
