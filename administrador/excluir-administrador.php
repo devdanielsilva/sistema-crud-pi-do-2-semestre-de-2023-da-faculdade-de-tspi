@@ -30,22 +30,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
 
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <title>Excluir Administrador</title>
     <link rel="stylesheet" href="assets/style_page/excluir-administrador.css">
 </head>
+
 <body>
-<section class="c">
-    <div class="container-a">
-        <img src="assets/img/estoque.png" alt="estoque-img">
-    <div class="container-b">
-        <h1>Excluir Administrador</h1>
-        <p id="p1"> Essa Função ainda não está disponível </p>
-        <!-- <p id="erro"> <?php echo $mensagem; ?> </p> -->
-        <a href="listar_administrador.php" class="btn">Voltar Para Lista de Produtos</a>
-    </div>
-    </div>
-</section>
+    <section class="c">
+        <div class="container-a">
+            <img src="assets/img/estoque.png" alt="estoque-img">
+            <div class="container-b">
+                <h1>Excluir Administrador</h1>
+                <p id="p1"> Essa Função ainda não está disponível </p>
+                <!-- <p id="erro"> <?php echo $mensagem; ?> </p> -->
+                <a href="listar_administrador.php" class="btn">Voltar Para Lista de Administradores</a>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
