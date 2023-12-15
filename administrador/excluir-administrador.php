@@ -45,7 +45,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET' && isset($_GET['id'])) {
                 <h1>Excluir Administrador</h1>
                 <p id="p1"> Essa Função ainda não está disponível </p>
                 <!-- <p id="erro"> <?php echo $mensagem; ?> </p> -->
-                <a href="listar_administrador.php" class="btn">Voltar Para Lista de Administradores</a>
             </div>
         </div>
     </section>
